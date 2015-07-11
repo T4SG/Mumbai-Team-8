@@ -49,7 +49,7 @@
 						</div><!-- /gn-scroller -->
 					</nav>
 				</li>
-				<li><a href="overview.html">Overview</a></li>
+				<li><a href="overview.php">Overview</a></li>
 			</ul>	
 			<div class="main">
 				<ul class="cbp_tmtimeline">

@@ -11,6 +11,16 @@
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
   	
 	<title>Responsive Vertical Timeline</title>
+    <style>
+	.progress{
+	  background-color: rgb(245, 245, 255);
+	  border-radius: 8px;
+	  width: 100%;
+	}
+	.progress td{
+		padding: 4px;
+	}
+	</style>
 </head>
 <body>
 	
@@ -22,9 +32,38 @@
 			</div> <!-- cd-timeline-img -->
 
 			<div class="cd-timeline-content">
-				<h2>Title of section 1</h2>
-				<img src="img/download.jpg">
-				<a href="#0" class="cd-read-more">Read more</a>
+            	<table class="progress">
+                  <tr>
+                    <th>Phases</th>
+                    <th>Progress</th>		
+                    <th>Images</th>
+                  </tr>
+                  <tr>
+                    <td>Site Preparation</td>
+                    <td>100%</td>
+                    <td><a href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td>Soil Preparation</td>
+                    <td>50%</td>
+                    <td><a href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td>Concrete Bed Layer</td>
+                    <td>45%</td>
+                    <td><a href="#">View</a></td>
+                  </tr>
+                  <tr>
+                    <td>Brick Walls</td>
+                    <td>60%</td>
+                    <td><a href="#">View</a></td>
+                  </tr>
+                </table>
+				<!--
+                    <h2>Title of section 1</h2>
+                    <img src="img/download.jpg">
+                    <a href="#0" class="cd-read-more">Read more</a>
+                -->
 				<span class="cd-date">Jan 14</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
