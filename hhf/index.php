@@ -79,12 +79,12 @@
 			$currentPercent = $row['currentprogress'];
 
 			if($currentPercent < $expectedPercent) {?>
-			<div class="box<?php echo $i;$i++;?>" id="red">
-				</div>
+			<a href="histogram/dmbi.php?pid=<?php echo $row['pid'];?>"> <div class="box<?php echo $i;$i++;?>" id="red"> <?php echo $row['pname']; ?>
+				</div></a>
 				<?php } ?>
 			<!--<?php /*else*/ {?>-->
-			<div class="box<?php echo $i;$i++;?>" id="green">
-				</div>
+			<a href="histogram/dmbi.php?pid=<?php echo $row['pid'];?>"><div class="box<?php echo $i;$i++;?>" id="green"> <?php echo $row['pname']; ?>
+				</div></a>
 			<!--<?php } ?>-->
 
         <?php } ?>	
