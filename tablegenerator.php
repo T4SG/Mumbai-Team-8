@@ -12,7 +12,7 @@
 </center>
 <style type="text/css" scoped>
 table.GeneratedTable {
-width:20%;
+width:80%;
 background-color:#FFFFFF;
 border-collapse:collapse;border-width:1px;
 border-color:#336600;
@@ -42,11 +42,41 @@ background-color:#CCFF99;
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>project1</td>
-<td>donar1</td>
+<?php
+
+include 'connect.php';
+$query_get="select * from donors,project where project.pid=donors.pid";
+$query_exec = mysql_query($query_get) or die(mysql_error());
+
+while($ans = mysql_fetch_assoc($query_exec))
+   {
+   $pn=$ans['pname'];
+   $na=$ans['name'];
+   $cp=$ans['contactperson'];
+   $currentprogress=$ans['currentprogress'];
+   $budget=$ans['budget'];
+   $cnumber=$ans['cpmobile'];
+	echo '<tr><td>';
+	echo $pn;
+	echo '<br>';
+	
+	echo 'budget: '.$budget;
+	echo '<br>';
+	echo 'contact person: '.$cp;
+	echo '<br>';
+	echo 'mobile: '.$cnumber;
+	echo '<br>';
+	echo 'currentprogress: '.$currentprogress.' %';
+	
+	
+echo '</td> <td>';
+	echo $na ;
+	echo '</td>
+	</tr>';
+   }
 
 
+?>
 </tbody>
 </table>
 </body>
