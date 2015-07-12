@@ -11,6 +11,11 @@ $rows = mysql_num_rows($query_exec);
  echo include 'login.html';
  }
  else  {
-    echo "User Found" ;
+	if($type=="donor")
+	header('Location: timeline/index.php');
+	else if($type=="partner")
+	header('Location: timeline/proj_selection_and_input.php');
+	else
+	header('Location: hhf/index.php');
 }
 ?>

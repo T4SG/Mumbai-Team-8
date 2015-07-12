@@ -76,9 +76,8 @@
                 <input type="button" id="show_quickUpdate" value="Say Hi" />
             </div>
             <div class="quickUpdate">
-                <h>Description</h> <textarea name="text" cols=20 rows=3></textarea>
-                <br>
-                <h>Images</h> 
+                <h>Description</h> <textarea name="text" cols=20 rows=3 style="margin-top: 32px"></textarea>
+                 
                 <br>
                 <h>Need more capital?</h>
                 <br>
@@ -90,109 +89,113 @@
                 <input type="Submit"/>
             </div>
             <div class="detailedProgress">
-                <table>
+                <form action="process.php" method="POST">
+                  <table>
                   <tr>
                     <th>Phases</th>
                     <th>Percentage Completed</th>		
                     <th>Comments/Issues</th>
                     <th>Images</th>
                   </tr>
+
                   <tr>
                     <td>Site Preparation</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted1"></td>
+                    <td><textarea name= "Comment1" cols="20" rows="3"></textarea></td>
                   </tr>
                   <tr>
                     <td>Soil Preparation</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted2"></td>
+                    <td><textarea name= "Comment2" cols="20" rows="3"></textarea></td>
                   </tr>
                   <tr>
                     <td>Concrete Bed Layer</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted3"></td>
+                    <td><textarea name= "Comment3" cols="20" rows="3"></textarea></td>
                   </tr>
                   <tr>
                     <td>Brick Walls</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted4"></td>
+                    <td><textarea name= "Comment4" cols="20" rows="3"></textarea></td>
                   </tr>
                   <tr>
                     <td>Finishes Walls</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted5"></td>
+                    <td><textarea name= "Comment5" cols="20" rows="3"></textarea></td>
                   </tr>
                   <tr>
                     <td>Finishes Ceilings</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted6"></td>
+                    <td><textarea name= "Comment6" cols="20" rows="3"></textarea></td>
                   <tr>
                   <tr>
                     <td>Finishes Floors</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted7"></td>
+                    <td><textarea name= "Comment7" cols="20" rows="3"></textarea></td>
                  </tr>
                   <tr>
                     <td>Doors-Carpentry</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted8"></td>
+                    <td><textarea name= "Comment8" cols="20" rows="3"></textarea></td>
                  <tr>
                   <tr>
                     <td>Finishes-Windows</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted9"></td>
+                    <td><textarea name= "Comment9" cols="20" rows="3"></textarea></td>
                  </tr>
                   <tr>
                     <td>Locksmith Work</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted10"></td>
+                    <td><textarea name= "Comment10" cols="20" rows="3"></textarea></td>
                  <tr>
                   <tr>
                     <td>Glass for Windows</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted11"></td>
+                    <td><textarea name= "Comment11" cols="20" rows="3"></textarea></td>
                   </tr>
                   <tr>
                     <td>Internal Painting</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted12"></td>
+                    <td><textarea name= "Comment12" cols="20" rows="3"></textarea></td>
                   <tr>
                   <tr>
                     <td>Electric work</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted13"></td>
+                    <td><textarea name= "Comment13" cols="20" rows="3"></textarea></td>
                   </tr>
                   <tr>
                     <td>Electric Appliances</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted14"></td>
+                    <td><textarea name= "Comment14" cols="20" rows="3"></textarea></td>
                   <tr>
                   <tr>
                     <td>Sink and Water Plumbing</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted15"></td>
+                    <td><textarea name= "Comment15" cols="20" rows="3"></textarea></td>
                   </tr>
                   <tr>
                     <td>External Walls Painting</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted16"></td>
+                    <td><textarea name= "Comment16" cols="20" rows="3"></textarea></td>
                   <tr>
                   <tr>
                     <td>Plaque Install</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted17"></td>
+                    <td><textarea name= "Comment17" cols="20" rows="3"></textarea></td>
                   </tr>
                   <tr>
                     <td>Soil Preparation</td>
-                    <td><input = "text" name = "Percentage Completed"></td>
-                    <td><textarea name= "Comment" cols="20" rows="3"></textarea></td>
+                    <td><input = "text" name = "PercentageCompleted18"></td>
+                    <td><textarea name= "Comment18" cols="20" rows="3"></textarea></td>
                   <tr>
+                 
                 </table>
                 <br>
                 <br>
                 <center>
-                <input type="Submit"/>
+                <input type="Submit" value="Submit"/>
                 </center>
+                 </form>
             </div>
         </div>
 		
@@ -226,3 +229,5 @@
 		</script>
 	</body>
 </html>
+
+
