@@ -13,11 +13,50 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
 	</head>
+	<style>
+	.logo_img{
+	height: 60px;
+  top: 0px;
+  position: absolute;
+  right: 16px;
+    z-index: 10;
+}
+	.header span{
+
+  float: left;
+  
+  font-family: 'Exo', sans-serif;
+  font-size: 35px;
+  font-weight: 200;
+color: #5379fa;
+}
+.header span span {
+  color: #000 !important;
+}
+.common {
+height: 100px;
+  position: absolute;
+  /* margin: 0 auto; */
+  left: 42%;
+  top: 0px;
+  padding: 5px;
+  z-index: 10;
+  }
+  @media screen and (max-width: 500px){
+	.common{
+		display:none;
+	}
+  }
+	</style>
 	<body>
 		<div class="container">
 			<header class="clearfix">
 				
 			</header>
+			<span class="header common">
+				<span>Hearts<span>Happy</span></span>
+			</span>
+			<img src="logo.jpg" class="logo_img" />
 			<ul id="gn-menu" class="gn-menu-main">
 				<li class="gn-trigger">
 					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
@@ -45,6 +84,8 @@
 								
 								
 							</ul>
+							
+			
 						</div><!-- /gn-scroller -->
 					</nav>
 				</li>
