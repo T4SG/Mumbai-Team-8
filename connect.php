@@ -1,5 +1,6 @@
 <?php
-$hostname_localhost ="10.242.162.8";
+//$hostname_localhost ="10.242.162.8";
+$hostname_localhost ="localhost";
 $database_localhost ="hhf";
 $username_localhost ="root";
 $password_localhost ="";
