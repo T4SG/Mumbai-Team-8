@@ -5,6 +5,9 @@
 <html>
 <head>
 <title> detail view</title>
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/component1.css" />
+<script src="js/modernizr.custom.js"></script>
 </head>
 <body>
 <center>
@@ -30,6 +33,51 @@ padding:3px;
 table.GeneratedTable thead {
 background-color:#CCFF99;
 }
+
+.contentContainer{
+			text-align: center;
+		}
+		.quickUpdate{
+			display:none;
+		}
+		.detailedProgress{
+			display:none;
+		}
+		.detailedProgress table{
+			margin:auto;
+		}
+		#back{
+			display:none;
+		}
+		.logo_img{
+	height: 60px;
+  top: 0px;
+  position: absolute;
+  right: 16px;
+  z-index:10;
+}
+.header span{
+  float: left;
+  font-family: 'Exo', sans-serif;
+  font-size: 35px;
+  font-weight: 200;
+  color: #5379fa;
+  position: absolute;
+  top: -128%;
+  top: -128%;
+  z-index: 10;
+}
+.header span span {
+   color: #F4ECEC !important;
+  top: 0px;
+}
+.common {
+height: 100px;
+  position: absolute;
+  /* margin: 0 auto; */
+  left: 42%;
+  padding: 5px;
+  }
 </style>
 
 <!-- HTML Code -->
@@ -42,8 +90,43 @@ background-color:#CCFF99;
 </tr>
 </thead>
 <tbody>
-<?php
 
+
+<div class="container">
+			<header class="clearfix">
+				
+			</header>
+			<span class="header common">
+				<span>Happy<span>Hearts</span></span>
+			</span>
+			<img src="logo.jpg" class="logo_img" />	
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li class="gn-search-item">
+									<input placeholder="Search" type="search" class="gn-search">
+									<a class="gn-icon gn-icon-search"><span>ABC</span></a>
+								</li>
+								<li>
+									<a class="gn-icon gn-icon-download">PQR</a>
+								</li>
+								<li><a class="gn-icon gn-icon-cog">BCD</a></li>
+								<li><a class="gn-icon gn-icon-help">DEF</a></li>
+								<li>
+									<a class="gn-icon gn-icon-archive">XYZ</a>
+								</li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<!-- <li><a href="overview.php">Overview</a></li> -->
+			</ul>	
+		</div>
+
+<?php
 include 'connect.php';
 $query_get="select * from donors,project where project.pid=donors.pid";
 $query_exec = mysql_query($query_get) or die(mysql_error());
@@ -79,5 +162,13 @@ echo '</td> <td>';
 ?>
 </tbody>
 </table>
+
+<script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+        <script src="jquery-1.11.3.min.js"></script>
+
 </body>
 </html>

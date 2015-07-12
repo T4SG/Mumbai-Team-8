@@ -28,6 +28,34 @@
 		#back{
 			display:none;
 		}
+		.logo_img{
+	height: 60px;
+  top: 0px;
+  position: absolute;
+  right: 16px;
+  z-index:10;
+}
+.header span{
+  float: left;
+  font-family: 'Exo', sans-serif;
+  font-size: 35px;
+  font-weight: 200;
+  color: #5379fa;
+  position: absolute;
+  top: -67px;
+  z-index: 10;
+}
+.header span span {
+   color: #F4ECEC !important;
+  top: 0px;
+}
+.common {
+height: 100px;
+  position: absolute;
+  /* margin: 0 auto; */
+  left: 42%;
+  padding: 5px;
+  }
 		</style>
 	</head>
 	<body>
@@ -35,32 +63,27 @@
 			<header class="clearfix">
 				
 			</header>
+			<span class="header common">
+				<span>Happy<span>Hearts</span></span>
+			</span>
+			<img src="logo.jpg" class="logo_img" />	
 			<ul id="gn-menu" class="gn-menu-main">
-				<li class="gn-trigger">
+				<li class="gn-trigger" style="top: 0px;">
 					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
 					<nav class="gn-menu-wrapper">
 						<div class="gn-scroller">
 							<ul class="gn-menu">
 								<li class="gn-search-item">
 									<input placeholder="Search" type="search" class="gn-search">
-									<a class="gn-icon gn-icon-search"><span>Search</span></a>
+									<a class="gn-icon gn-icon-search"><span>ABC</span></a>
 								</li>
 								<li>
-									<a class="gn-icon gn-icon-download">Downloads</a>
-									<ul class="gn-submenu">
-										<li><a class="gn-icon gn-icon-illustrator">Vector Illustrations</a></li>
-										<li><a class="gn-icon gn-icon-photoshop">Photoshop files</a></li>
-									</ul>
+									<a class="gn-icon gn-icon-download">PQR</a>
 								</li>
-								<li><a class="gn-icon gn-icon-cog">Settings</a></li>
-								<li><a class="gn-icon gn-icon-help">Help</a></li>
+								<li><a class="gn-icon gn-icon-cog">BCD</a></li>
+								<li><a class="gn-icon gn-icon-help">DEF</a></li>
 								<li>
-									<a class="gn-icon gn-icon-archive">Archives</a>
-									<ul class="gn-submenu">
-										<li><a class="gn-icon gn-icon-article">Articles</a></li>
-										<li><a class="gn-icon gn-icon-pictures">Images</a></li>
-										<li><a class="gn-icon gn-icon-videos">Videos</a></li>
-									</ul>
+									<a class="gn-icon gn-icon-archive">XYZ</a>
 								</li>
 							</ul>
 						</div><!-- /gn-scroller -->
