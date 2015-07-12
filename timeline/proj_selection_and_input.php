@@ -10,7 +10,7 @@
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/component1.css" />
 		<script src="js/modernizr.custom.js"></script>
         <style>
 		.contentContainer{
@@ -78,14 +78,10 @@
             <div class="quickUpdate">
                 <h>Description</h> <textarea name="text" cols=20 rows=3 style="margin-top: 32px"></textarea>
                  
-                <br>
-                <h>Need more capital?</h>
-                <br>
-                <ul>
-                <li><button type="button">Yes</button></li>
-                <li><button type = "button">No</button></li>
-                </ul>
-                <br>
+                <br><br>
+                <h>Need more capital?</h><input type="radio" name="needCapital"/>Yes
+				<input type ="radio" name="needCapital">No</button>
+                <br><br>
                 <input type="Submit"/>
             </div>
             <div class="detailedProgress">
@@ -95,7 +91,7 @@
                     <th>Phases</th>
                     <th>Percentage Completed</th>		
                     <th>Comments/Issues</th>
-                    <th>Images</th>
+                    <!--<th>Images</th>-->
                   </tr>
 
                   <tr>
