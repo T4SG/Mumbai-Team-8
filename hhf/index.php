@@ -79,7 +79,8 @@
 			$currentPercent = $row['currentprogress'];
 
 			if($currentPercent < $expectedPercent) {?>
-			<a href="histogram/dmbi.php?pid=<?php echo $row['pid'];?>"> <div class="box<?php echo $i;$i++;?>" id="red"> <?php echo $row['pname']; ?>
+			
+			<a href="Chart/Chart.js-master/samples/pie.html"> <div class="box<?php echo $i;$i++;?>" id="red"> <?php echo $row['pname']; ?>
 				</div></a>
 				<?php } ?>
 			<!--<?php /*else*/ {?>-->
